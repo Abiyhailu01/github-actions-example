@@ -29,7 +29,7 @@ jobs:
       uses: mr-smithers-excellent/docker-build-push@v5
       with:
         image: awoldets/bxml-docker-dev 
-        tags: latest
+        tags: v1
         registry: artifactory.ssnc.dev
         dockerfile: Dockerfile
         username: ${{ secrets.ARTIFACTORY_USER }}
