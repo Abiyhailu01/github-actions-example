@@ -28,8 +28,9 @@ jobs:
     - name: Build & push Docker image
       uses: mr-smithers-excellent/docker-build-push@v5
       with:
-        image: artifactory.ssnc.dev/awoldets/bxml-docker-dev 
+        image: awoldets/bxml-docker-dev 
         tags: latest
+        registry: artifactory.ssnc.dev
         dockerfile: Dockerfile
         username: ${{ secrets.ARTIFACTORY_USER }}
         password: ${{ secrets.ARTIFACTORY_TOKEN }}
