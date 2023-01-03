@@ -28,9 +28,9 @@ jobs:
     - name: Build & push Docker image
       uses: mr-smithers-excellent/docker-build-push@v5
       with:
-        image: awoldets/bxml-docker-dev 
+        image: abiyhailu01/springboot-images-new
         tags: v1
-        registry: artifactory.ssnc.dev
+        registry: hub.docker.com
         dockerfile: Dockerfile
-        username: ${{ secrets.ARTIFACTORY_USER }}
-        password: ${{ secrets.ARTIFACTORY_TOKEN }}
+        username: ${{ secrets.DOCKER_USERNAME }}
+        password: ${{ secrets.DOCKER_PASSWORD N }}
