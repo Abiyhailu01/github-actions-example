@@ -29,8 +29,8 @@ jobs:
       uses: mr-smithers-excellent/docker-build-push@v5
       with:
         image: abiyhailu01/springboot-images-new
-        tags: v1
-        registry: hub.docker.com 
+        tags: v2
+        registry: docker.io 
         dockerfile: Dockerfile
         username: ${{ secrets.DOCKER_USERNAME }}
         password: ${{ secrets.DOCKER_PASSWORD  }}
