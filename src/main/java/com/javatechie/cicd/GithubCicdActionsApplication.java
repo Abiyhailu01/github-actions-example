@@ -11,7 +11,7 @@ public class GithubCicdActionsApplication {
 
 	@GetMapping("/welcome")
 	public String welcome(){
-		return "Welcome to  Testing Artifactory 02! !";
+		return "Welcome to  Testing Artifactory 03! !";
 	}
 
 	public static void main(String[] args) {
