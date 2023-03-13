@@ -34,6 +34,7 @@ jobs:
         image: awoldets/bxml-docker-dev 
         tags: v1
         registry: artifactory.ssnc.dev
+        githubOrg: override-org
         dockerfile: Dockerfile
         username: ${{ secrets.ARTIFACTORY_USER }}
         password: ${{ secrets.ARTIFACTORY_TOKEN }}
