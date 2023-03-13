@@ -24,12 +24,9 @@ jobs:
         cache: maven
     - name: Build with Maven
       run: mvn clean install
-
-    - name: Build & push Docker image
-      uses: mr-smithers-excellent/docker-build-push@v6
       
     - name: Build & push Docker image to Artifactoryii
-      uses: mr-smithers-excellent/docker-build-push@v5
+      uses: mr-smithers-excellent/docker-build-push@v6
       with:
         image: awoldets/bxml-docker-dev 
         tags: v1
